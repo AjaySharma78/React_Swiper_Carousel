@@ -1,0 +1,72 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.mySwiper {
+  overflow: visible;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transition: 1s ease-in-out;
+}
+
+.swiper-slide:nth-child(1) {
+  margin-left: -145px;
+}
+
+.mySwiper .swiper-slide:not(.swiper-slide-active)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(111 111 111 / 69%);
+  z-index: 1;
+  border-radius: inherit;
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  margin-bottom: -50px;
+}
+
+.swiper-pagination-bullet {
+  background: #ffff;
+}
