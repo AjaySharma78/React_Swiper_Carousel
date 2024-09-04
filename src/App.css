@@ -38,6 +38,22 @@ body {
   background: white;
   transition: 1s ease-in-out;
 }
+:root {
+  --swiper-navigation-size: 25px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width:var(--swiper-navigation-size);
+  height:var(--swiper-navigation-size); 
+  color: white;
+  background-color: rgba(47, 47, 47, 0.525);
+  background-size: 10px 10px;
+  padding: 30px;
+  font-weight:bold;
+  border-radius: 5px;
+  
+}
+
 
 .swiper-slide:nth-child(1) {
   margin-left: -145px;
